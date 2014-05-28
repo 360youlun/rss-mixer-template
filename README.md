@@ -1,10 +1,11 @@
-rss-mixer-template
+[rss-mixer-template](http://360youlun.github.io/rss-mixer-template/)
 ==================
 
 Starter template for RSS Mixer Test
+[http://360youlun.github.io/rss-mixer-template/](http://360youlun.github.io/rss-mixer-template/)
 
-Getting Started
----------------
+Getting Started with Back-End task
+----------------------------------
 
 The only thing you need is django installed in your python path. If you don't, just run:
 
