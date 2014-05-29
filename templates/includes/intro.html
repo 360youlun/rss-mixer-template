@@ -10,6 +10,12 @@
     <p>This is a simple app where you can add RSS feed to the "mix" and see
         all posts from all feeds mixed together and ordered by date.</p>
 
+    <p>When you code, please, value quality over quantity! You don't have to deliver <em>all</em> user stories. This
+        test is time-boxed to 2 hours, don't spend more time than that.</p>
+
+    <p>Work on one story at a time and don't switch to the next one until the current story is 100% done - meaning:
+    it's working, all acceptance criteria are confirmed, code quality achieved. (+ test coverage for back-end task)</p>
+
     <h4>User Stories</h4>
 
     <div class="panel-group" id="accordion">
@@ -170,26 +176,26 @@
                     <p>For this test we're going to use django cache instead of DB
                         (models). It's ok to use models instead but cache is preferred.</p>
                     <h4>Requirements</h4>
+                    <ul>
+                        <li>The fuctionality of the user stories above is what we want to
+                            build. You should implement as many stories as you can within
+                            the time you have (2 hours) in order of priority.</li>
 
-                    <p>The fuctionality of the user stories above is what we want to
-                        build. You should implement as many stories as you can within
-                        the time you have (2 hours) in order of priority.</p>
+                        <li>For adding feeds use a Django Form that saves the data into
+                            basic django cache backend. You can use LocMem and any other
+                            configuration.</li>
 
-                    <p>For adding feeds use a Django Form that saves the data into
-                        basic django cache backend. You can use LocMem and any other
-                        configuration.</p>
+                        <li>When we add a feed we should download and parse it to save
+                            the posts into the cache backend as well.</li>
 
-                    <p>When we add a feed we should download and parse it to save
-                        the posts into the cache backend as well.</p>
+                        <li>Posts are loaded from all feeds, mixed together and ordered
+                            by date.</li>
 
-                    <p>Posts are loaded from all feeds, mixed together and ordered
-                        by date.</p>
+                        <li>Your code (form, view, utils) has to be covered with unit tests,
+                            ideally you should use TDD to develop the whole thing.</li>
 
-                    <p>Your code (form, view, utils) has to be covered with unit tests,
-                        ideally you should use TDD to develop the whole thing.</p>
-
-                    <p>If you have enough time add Ajax handler views similar to
-                        static JSON files from the Front-End task (optional).</p>
+                        <li>Your code should pass PEP-8 validation.</li>
+                    </ul>
                 </div>
             </div>
         </div>
