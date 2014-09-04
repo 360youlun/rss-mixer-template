@@ -114,48 +114,48 @@
         </div>
         <div class="panel-body">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" id="taskDescription">
-                <li class="active"><a href="#fe" data-toggle="tab">Front-End</a></li>
-                <li><a href="#be" data-toggle="tab">Back-End</a></li>
-            </ul>
+{#            <ul class="nav nav-tabs" id="taskDescription">#}
+{#                <li><a href="#fe" data-toggle="tab">Front-End</a></li>#}
+{#                <li class="active"><a href="#be" data-toggle="tab">Back-End</a></li>#}
+{#            </ul>#}
             <div class="tab-content">
-                <div class="tab-pane fade in active" id="fe">
-                    <h4>Prerequisites</h4>
-
-                    <p>
-                        <a href="https://github.com/360youlun/rss-mixer-template/archive/gh-pages.zip"
-                           class="btn btn-primary">
-                            <i class="glyphicon glyphicon-cloud-download"></i>
-                            Front-End files
-                        </a> (this page)
-                    </p>
-
-                    <p>For the front-end we don't use any dynamic data and instead
-                        use static JSON files for Ajax requests. But we assume our code
-                        should be easily switched to a dynamic backend.</p>
-                    <ul>
-                        <li>UI/UX is attractive and easy to use</li>
-                        <li>UI is responsive</li>
-                        <li>Feeds added by ajax POST to json/feeds.json</li>
-                        <li>Feeds list loaded by ajax GET to json/feeds.json</li>
-                        <li>Posts list loaded by ajax GET to json/feeds.json</li>
-                        <li>Feeds list updated on page load and feed added</li>
-                        <li>Posts list updated on page load and feed added</li>
-                    </ul>
-                    <h4>Requirements</h4>
-
-                    <h5>1. First of all you need to improve
-                        the UI/UX of this "app". It should look pleasant to the eye
-                        and be easy to use.</h5>
-
-                    <h5>2. The fuctionality of the user stories above is what we want to
-                        build. You should implement as many stories as you can within
-                        the time you have (2 hours) in order of priority.</h5>
-
-                    <h5>3. Final UI should be responsive.</h5>
-
-                </div>
-                <div class="tab-pane fade" id="be">
+{#                <div class="tab-pane fade in active" id="fe">#}
+{#                    <h4>Prerequisites</h4>#}
+{##}
+{#                    <p>#}
+{#                        <a href="https://github.com/360youlun/rss-mixer-template/archive/gh-pages.zip"#}
+{#                           class="btn btn-primary">#}
+{#                            <i class="glyphicon glyphicon-cloud-download"></i>#}
+{#                            Front-End files#}
+{#                        </a> (this page)#}
+{#                    </p>#}
+{##}
+{#                    <p>For the front-end we don't use any dynamic data and instead#}
+{#                        use static JSON files for Ajax requests. But we assume our code#}
+{#                        should be easily switched to a dynamic backend.</p>#}
+{#                    <ul>#}
+{#                        <li>UI/UX is attractive and easy to use</li>#}
+{#                        <li>UI is responsive</li>#}
+{#                        <li>Feeds added by ajax POST to json/feeds.json</li>#}
+{#                        <li>Feeds list loaded by ajax GET to json/feeds.json</li>#}
+{#                        <li>Posts list loaded by ajax GET to json/feeds.json</li>#}
+{#                        <li>Feeds list updated on page load and feed added</li>#}
+{#                        <li>Posts list updated on page load and feed added</li>#}
+{#                    </ul>#}
+{#                    <h4>Requirements</h4>#}
+{##}
+{#                    <h5>1. First of all you need to improve#}
+{#                        the UI/UX of this "app". It should look pleasant to the eye#}
+{#                        and be easy to use.</h5>#}
+{##}
+{#                    <h5>2. The fuctionality of the user stories above is what we want to#}
+{#                        build. You should implement as many stories as you can within#}
+{#                        the time you have (2 hours) in order of priority.</h5>#}
+{##}
+{#                    <h5>3. Final UI should be responsive.</h5>#}
+{##}
+{#                </div>#}
+                <div class="tab-pane fade in active" id="be">
                     <h4>Prerequisites</h4>
 
                     <p>
@@ -171,15 +171,16 @@
                         </a> (Django project)
                     </p>
 
-                    <p>For the back-end we don't have to use ajax but we should
-                        support it so we can replace static JSON files in the Front-End
-                        test with dynamic requests and our code will still work.</p>
+{#                    <p>For the back-end we don't have to use ajax but we should#}
+{#                        support it so we can replace static JSON files in the Front-End#}
+{#                        test with dynamic requests and our code will still work.</p>#}
 
                     <p>We don't need any javascript or Front-End coding here, just
                         use django and existing UI mockup and make it dynamic.</p>
 
                     <p>For this test we're going to use django cache instead of DB
-                        (models). It's ok to use models instead but cache is preferred.</p>
+                        (models). It's ok to use models instead or any other available storage.</p>
+
                     <h4>Requirements</h4>
                     <ul>
                         <li>The fuctionality of the user stories above is what we want to
